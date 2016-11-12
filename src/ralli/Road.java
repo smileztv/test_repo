@@ -4,12 +4,15 @@ public class Road{
 		Car car = new Car();
 		car.fill(100);
 		car.showGas();
-		
-		Car mers = car;
-		mers.drive(10);
-		mers.showGas();
+		car.drive(10);
+		car.showGas();
+		Road.gasStation(car);
+		car.showGas();
+	
 		}
-
+	public static void gasStation(Car car){
+		car.fill(100);		
+	}
 	
 	
 }
